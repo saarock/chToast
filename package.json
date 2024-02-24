@@ -1,0 +1,15 @@
+{
+  "name": "chtoast",
+  "version": "1.0.0",
+  "description": "A notification libary for the typeScript and the javaScript projects.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": ["toast", "notification", "react", "typeScript", "javaScript"],
+  "author": "CodeHons",
+  "license": "ISC"
+}
