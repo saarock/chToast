@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name</title>
-</head>
-<body>
+
     <h1>Project Name</h1>
     <p>Brief description of the project.</p>
 
@@ -32,5 +25,3 @@
 
     <h2 id="license">License</h2>
     <p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
-</body>
-</html>
