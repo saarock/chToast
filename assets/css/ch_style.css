@@ -1,5 +1,12 @@
+/* style.css */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Your additional CSS rules go here */
 
 
+
+/* main ch_toast container */
 .ch_toast_container {
     position: fixed;
     top: 0;
@@ -8,51 +15,43 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    /* background-color: green; */
 }
 
+/* main ch_container ends */
 
-
+/* ch_toast */
 .ch_toast {
-    background-color: black;
     margin: 2rem;
-    width: 20rem;
+    width: 22rem;
     box-shadow: rgba(0, 0, 0, 0.863) 0px 14px 28px, rgba(0, 0, 0, 0.801) 0px 10px 10px;
     display: flex;
     height: fit-content;
+    height: 5rem;
+    max-height: 9rem;
     justify-content: space-between;
     align-items: center;
     border-radius: 0.2rem;
     z-index: 1;
-    clear:none;
+    clear: none;
     position: relative;
     pointer-events: auto;
     float: right;
     clear: both;
- 
+    overflow: hidden;
 }
 
 
-
-.a {
-    z-index: 1000;
-    background-color: red;
-}
-
-.show_at_100rem {
-    transform: translateX(0);
-    background-color: yellow;
-
-}
 
 .ch_toast_icon {
-    color: white;
     z-index: 1000;
     font-size: 2rem;
-    cursor: pointer;
+    width: 3rem;
     height: 100%;
     padding: 0.4rem;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
 .ch_toast_message {
@@ -68,8 +67,6 @@
 .ch_toast_cut_icon {
     font-size: 1.5rem;
     cursor: pointer;
-    background-color: azure;
-    color: black;
     display: flex;
     height: 0.1rem;
     width: 0.1rem;
@@ -81,7 +78,7 @@
 }
 
 .ch_toast_cut_icon:hover {
-    background-color: pink;
+    background-color: rgb(99, 43, 52) !important;
 }
 
 .border-increase {
@@ -96,15 +93,3 @@
     left: 0;
     transition: 1s linear;
 }
-
-.a {
-    height: 22rem;
-}
-.ch_aa {
-    background-color: red !important;
-}
-
-.ic_ {
-    background-color: aqua !important;
-}
-

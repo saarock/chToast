@@ -1,90 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/ch_style.css" />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <title>toast</title>
-    <link rel="stylesheet" href="./assets/css/ch_style.css">
-</head>
+  </head>
+  <body>
+    <button>Click</button>
+    <button class="a">Click</button>
+  <!-- Twitter icon -->
+  <i class="fab fa-twitter"></i>
 
-<body>
+    <div class="ch_toast_container"></div>
 
-    <div class="ch_toast_container">
-    </div>
+    <script type="module">
+      // Import 'normal' directly from normalChToast.js
+      import { normal, normalChToastSetting } from "./dist/normalToast/normalChToast.js";
 
-    <div class="a">
-        <button class="b" id="clickButton">CLick</button>
-        <button class="b" id="clickButton2">CLick</button>
-        <button class="b" id="clickButton3">CLick</button>
-        <button class="b" id="clickButton4">CLick</button>
-        <button class="b" id="clickButton5">CLick</button>
-        <button class="b" id="clickButton6">CLick</button>
-        <i class="fb-icon">favorite</i>
-        adfaf
-<i class="fb-icon">share</i>
-<i class="fb-icon">message</i>
-    </div>
-    <div>
+      normalChToastSetting.autoRemoved  = false;
+      // Define the makeClick function
+      window.makeClick = () => {
+    // typeIcon = "<i class='fab fa-twitter'></i>",
+        // let a = normal.loading({message: "Loading..."}); 
+         normal.success({message: "your "}); 
+         normal.loading();
+        //  normal.loading()
+  
+      //    setTimeout(() => {
+      // normalChToastSetting.autoRemoved  = true;
+      // normal.normalToastRemove(2)
 
-        <!-- <script type="module" src="http://127.0.0.1:5500/dev/plugin_dev/chToast/index.js"></script> -->
+      //    },1000)
+      // };
+      };
 
-        <script type="module">
-            import toast from './dist/ch_toast.js';
-            import {chToast} from './dist/ch_toast.js';
+      window.makeClick2 = () => {
+        normal.removeAll()
 
+      }
 
-            function hahba() {                    
-                chToast.autoRemoved = false;
-                toast.sucess({
-                    message: "very nice afgas adasdgf", 
-                    id: "r2", 
-                    transition: 0.4,
-                    sound: true, timeOut: 5, messageColor: "white", typeIconColor: 'green',
-                    onClickGo: '/aa',
-                    // right: "0%",
-                    toastCLassName  :"ch_aa",
-                    messageClassName : "ch_toast_message",
-                    typeIconClassName : "ch_toast_icon" ,
-                    cutIconClassName  :"ch_toast_cut_icon",
-                    cutIconClassName : "ic_",
-                    typeIcon: "<i class='fa fa-linkedin'></i>",
-                    cutIconColor: "white", backgroundColor: 'green', borderBackColor: 'pink'
-                });
-            }
+    
 
-            function hahba2() {
-                // const t = new chToast();
-                toast.sucess({ message: "beautiful", transition: 0.4, timeOut: 5, color: "white", backgroundColor: 'black' });
-                // toast.sucess({ message: "Oh my god", right: "-50", transition: 0.4, timeOut: 4, color: "white", backgroundColor: 'black', sound: false });
-
-// alert()
-            }
-
-
-            function hahba3() {
-                // const t = new chToast();
-                toast.sucess({ message: "Oh my god", right: "-50", transition: 0.4, timeOut: 4, color: "white", backgroundColor: 'black', sound: false });
-                const soundTone = new Audio("./public/music/t.wav");
-                toast.playSound(soundTone)
-            }
-
-            document.getElementById('clickButton').addEventListener('click', hahba);
-            document.getElementById('clickButton2').addEventListener('click', hahba2);
-            document.getElementById('clickButton3').addEventListener('click', hahba3);
-
-        </script>
-
-
-
-</body>
-
+      // Add event listener to the button
+      document.querySelector("button").addEventListener("click", makeClick);
+      document.querySelector(".a").addEventListener("click", makeClick2);
+    </script>
+  </body>
 </html>
