@@ -55,13 +55,67 @@ Then, you can use the normal object to display different types of toast messages
 function App() {
   const showToast = () => {
     // Display a success message
-    normal.success({ message: "Your success message here", onClick: "/path" });
+    normal.success({  message: "Your error comes here",
+    id: "error",
+    transition: 0.4,
+    timeOut: 2,
+    messageColor: "white",
+    typeIconColor: "white",
+    backgroundColor: "red",
+    cutIconColor: "white",
+    cutIconBackgroundColor: "black",
+    borderBackColor: "pink",
+    sound: true,
+    onClickGo: "/kk",
+    toastClassName: "ch_toast",
+    messageClassName: "ch_toast_message",
+    typeIconClassName: "ch_toast_icon",
+    cutIconClassName: "ch_toast_cut_icon",
+    typeIcon: "<i class='fas fa-exclamation-circle'></i>",
+    float: "right",
+    typeIconBackgroundColor: "black" });
 
     // Display an error message
-    normal.error({ message: "Your error message here" });
+    normal.error({  message: "Your error comes here",
+    id: "error",
+    transition: 0.4,
+    timeOut: 2,
+    messageColor: "white",
+    typeIconColor: "white",
+    backgroundColor: "red",
+    cutIconColor: "white",
+    cutIconBackgroundColor: "black",
+    borderBackColor: "pink",
+    sound: true,
+    onClickGo: "/kk",
+    toastClassName: "ch_toast",
+    messageClassName: "ch_toast_message",
+    typeIconClassName: "ch_toast_icon",
+    cutIconClassName: "ch_toast_cut_icon",
+    typeIcon: "<i class='fas fa-exclamation-circle'></i>",
+    float: "right",
+    typeIconBackgroundColor: "black"});
 
     // Display a loading message
-    normal.loading({ message: "Your loading message here" });
+    normal.loading({  message: "Your error comes here",
+    id: "error",
+    transition: 0.4,
+    timeOut: 2,
+    messageColor: "white",
+    typeIconColor: "white",
+    backgroundColor: "red",
+    cutIconColor: "white",
+    cutIconBackgroundColor: "black",
+    borderBackColor: "pink",
+    sound: true,
+    onClickGo: "/kk",
+    toastClassName: "ch_toast",
+    messageClassName: "ch_toast_message",
+    typeIconClassName: "ch_toast_icon",
+    cutIconClassName: "ch_toast_cut_icon",
+    typeIcon: "<i class='fas fa-exclamation-circle'></i>",
+    float: "right",
+    typeIconBackgroundColor: "black"});
   }
 
   return (
@@ -100,19 +154,6 @@ export default App;
    6. Control loading toast.
 
 
-## User Reviews
-
-### Review 1
-- **User**: [User Name](link-to-user-profile)
-- **Rating**: ⭐️⭐️⭐️⭐️⭐️
-- **Review**: "This plugin is amazing! It has greatly improved the user experience of my website."
-
-### Review 2
-- **User**: [Another User](link-to-user-profile)
-- **Rating**: ⭐️⭐️⭐️
-- **Review**: "Good plugin, but could use some improvements in terms of performance."
-
-<!-- Add more reviews as needed -->
 
 
 ## License
