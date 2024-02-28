@@ -13,7 +13,7 @@ First, import the normal object from the chToast plugin and the required CSS fil
 
 javascript
 Copy code
-```code
+```bash
 import { normal } from "ch_plugins/chToast/dist/normalToast/normalChToast";
 import "ch_plugins/chToast/assets/css/ch_style.css";
 ```
