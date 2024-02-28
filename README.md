@@ -100,6 +100,19 @@ export default App;
    6. Control loading toast.
 
 
+## User Reviews
+
+### Review 1
+- **User**: [User Name](link-to-user-profile)
+- **Rating**: ⭐️⭐️⭐️⭐️⭐️
+- **Review**: "This plugin is amazing! It has greatly improved the user experience of my website."
+
+### Review 2
+- **User**: [Another User](link-to-user-profile)
+- **Rating**: ⭐️⭐️⭐️
+- **Review**: "Good plugin, but could use some improvements in terms of performance."
+
+<!-- Add more reviews as needed -->
 
 
 ## License
