@@ -5,24 +5,12 @@ To install the chToast plugin, use npm or yarn:
 
 ```bash
 npm i ch_plugins
-import {normal} from "ch_plugins/chToast/dist/normalToast/normalChToast";
-import 'ch_plugins/chToast/assets/css/ch_style.css';
 
 
-function App() {
-  const a = () => {
-    // for sucess message;
-    normal.success({message: "adhdssfhsdfhadbgjasdggsadgsadg adjgajsdbv", onClick:"/a"});
+## Usage
+First, import the normal object from the chToast plugin and the required CSS file:
 
-    // for error message
-    normal.error();
-
-    // for loading message
-    normal.loading();
-  }
-  return (
-    <button onClick={a}>App</button>
-  )
-}
-
-export default App;
+javascript
+Copy code
+import { normal } from "ch_plugins/chToast/dist/normalToast/normalChToast";
+import "ch_plugins/chToast/assets/css/ch_style.css";
