@@ -19,12 +19,14 @@ import "ch_plugins/chToast/assets/css/ch_style.css";
 ```
 Add this container in the global page example in react index.html
 ``` bash
+
     <div class="ch_toast_container">
 
     </div>
 ```
 **Or in react at index.html**.
 ```bash
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -34,6 +36,7 @@ Add this container in the global page example in react index.html
     <title>Vite + React</title>
   </head>
   <body>
+    <!-- ch_toast_container -->
     <div class="ch_toast_container">
 
     </div>
@@ -42,6 +45,7 @@ Add this container in the global page example in react index.html
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
 
 
 ```
