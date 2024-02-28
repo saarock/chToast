@@ -51,4 +51,4 @@ export default App;
 
 
 ## License
-This plugin is licensed under the ISC License.
+This plugin is licensed under the MIT License.
