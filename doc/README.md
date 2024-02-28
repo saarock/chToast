@@ -43,6 +43,6 @@ export default App;
 ```
 
 ## Features
-1. **Success Message:** Display a success message with a custom message and optional onClick action.
+1. **Success Message:** Display a success message with a custom message, optional onClick action and other many options check out [Documentation which is comming soon](https://codehons-af9l.vercel.app/).
 2. **Error Message:** Display an error message with a custom message.
 3. **Loading Message:** Display a loading message with a custom message.
