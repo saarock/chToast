@@ -17,3 +17,27 @@ Copy code
 import { normal } from "ch_plugins/chToast/dist/normalToast/normalChToast";
 import "ch_plugins/chToast/assets/css/ch_style.css";
 ```
+Then, you can use the normal object to display different types of toast messages in your application:
+
+```bash
+function App() {
+  const showToast = () => {
+    // Display a success message
+    normal.success({ message: "Your success message here", onClick: "/path" });
+
+    // Display an error message
+    normal.error({ message: "Your error message here" });
+
+    // Display a loading message
+    normal.loading({ message: "Your loading message here" });
+  }
+
+  return (
+    <button onClick={showToast}>Show Toast</button>
+  );
+}
+
+export default App;
+
+
+```
