@@ -23,7 +23,7 @@ Add this container in the global page example in react index.html
 
     </div>
 ```
-** Or in react at index.html**
+**Or in react at index.html**.
 ```bash
 <!doctype html>
 <html lang="en">
