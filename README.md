@@ -4,7 +4,7 @@
 To install the chToast plugin, use npm or yarn:
 
 ```bash
-npm i ch_plugins
+npm i chtoast
 ```
 
 
@@ -14,8 +14,8 @@ First, import the normal object from the chToast plugin and the required CSS fil
 javascript
 Copy code
 ```bash
-import { normal } from "ch_plugins/chToast/dist/normalToast/normalChToast";
-import "ch_plugins/chToast/assets/css/ch_style.css";
+import { normal } from "chToast/dist/normalToast/normalChToast";
+import "chToast/assets/css/ch_style.css";
 ```
 Add this container in the global page example in react index.html
 ``` bash

@@ -1,6 +1,6 @@
 {
   "name": "chtoast",
-  "version": "1.0.1",
+  "version": "1.0.0beta2",
   "description": "A notification libary for the typeScript and the javaScript projects.",
   "main": "index.js",
   "type": "module",
@@ -16,7 +16,9 @@
     "notification",
     "react",
     "typeScript",
-    "javaScript"
+    "javaScript",
+    "toast",
+    "toastify"
   ],
   "author": "CodeHons",
   "license": "MIT",
