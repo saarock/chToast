@@ -42,7 +42,7 @@ namespace ToastParameters {
   }
 }
 
-export class normalChToastSetting {
+export default class normalToastSetting {
   private ch_toast_container!: HTMLCollectionOf<HTMLDivElement | Element>;
   public static autoRemoved = true;
   // variables to track the elements
@@ -234,17 +234,17 @@ export class normalChToastSetting {
     if (this.ch_toast_container[0].childElementCount >= 6) {
       if (
         this.ch_toast_container[0].childElementCount > 0 &&
-        this.ch_toast_container[0].children[normalChToastSetting.trackVariable]
+        this.ch_toast_container[0].children[normalToastSetting.trackVariable]
       ) {
         this.ch_toast_container[0].children[
-          normalChToastSetting.trackVariable
+          normalToastSetting.trackVariable
         ].remove();
-        normalChToastSetting.trackVariable >= 5
-          ? (normalChToastSetting.trackVariable = 5)
-          : (normalChToastSetting.trackVariable -= 1);
+        normalToastSetting.trackVariable >= 5
+          ? (normalToastSetting.trackVariable = 5)
+          : (normalToastSetting.trackVariable -= 1);
       }
     } else {
-      normalChToastSetting.trackVariable = 5;
+      normalToastSetting.trackVariable = 5;
     }
 
     // check there is Element or not to take all of our toast messages;
@@ -292,7 +292,7 @@ export class normalChToastSetting {
     }
 
     if (
-      normalChToastSetting.autoRemoved &&
+      normalToastSetting.autoRemoved &&
       this.ch_toast_container[0].firstElementChild?.id != "loading"
     ) {
       this.normalToastRemove(timeOut as number);
@@ -305,7 +305,7 @@ export class normalChToastSetting {
     timeOut?: number,
     successMessage?: string,
     successIcon?: string
-  ): void {
+    ): void {
     // algorithm fo the loading toast;
     const loadingElements = document.querySelectorAll("#loading");
     if (loadingElements.length > 0) {
@@ -330,7 +330,7 @@ export class normalChToastSetting {
     const toast = this.ch_toast_container[0].children;
     // Check if there are toast messages in the container
     if (this.ch_toast_container[0].childElementCount > 0 && toast.length > 0) {
-      [...toast].forEach((toast) => {
+      Array.from(toast).forEach((toast) => {
         this.removeByDecreaseBorder(
           timeOut ? timeOut : 2,
           toast as HTMLDivElement
@@ -382,7 +382,7 @@ export class normalChToastSetting {
     timeOut = 2000,
     successMessage = "Done",
   }: ToastParameters.loadingToastParameters = {}): void {
-    if (normalChToastSetting.autoRemoved) {
+    if (normalToastSetting.autoRemoved) {
       const allLoadingToast = document.getElementsByClassName("ch_toast");
       Array.from(allLoadingToast).map((current, index) => {
         if (current.id === "loading") {
@@ -404,7 +404,8 @@ export class normalChToastSetting {
   }
 
   private removeByClickingTheCutIcons(): void {
-    [...this.ch_toast_container[0].children].forEach((current, index) => {
+    if(this.ch_toast_container[0] && this.ch_toast_container[0].children.length > 0) {
+    Array.from(this.ch_toast_container[0].children as HTMLCollection).forEach((current, index) => {
       const cutIon = current.lastElementChild?.previousElementSibling;
       if (cutIon) {
         cutIon.addEventListener("click", (e) => {
@@ -417,11 +418,12 @@ export class normalChToastSetting {
       }
     });
   }
+  }
 
   // remove method
   public removeAll(): void {
-    if (normalChToastSetting.autoRemoved != true) {
-      normalChToastSetting.autoRemoved = true;
+    if (normalToastSetting.autoRemoved != true) {
+      normalToastSetting.autoRemoved = true;
     }
     this.normalToastRemove();
   }
@@ -440,7 +442,7 @@ export class normalChToastSetting {
   //   make clickable to all the toast
   public onClick(url: string): void {
     const allTheToast = document.getElementsByClassName("ch_toast");
-    [...allTheToast].forEach((current, index) => {
+    Array.from(allTheToast).forEach((current, index) => {
       current.addEventListener("click", (e) => {
         window.location.href = url;
         e.stopPropagation();
@@ -449,4 +451,4 @@ export class normalChToastSetting {
   }
 }
 
-export const normal = new normalChToastSetting();
+export const normal = new normalToastSetting();

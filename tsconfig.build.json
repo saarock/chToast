@@ -8,8 +8,8 @@
 {
     "extends": "./tsconfig.json",
     "compilerOptions": {
-      "outDir": "./build",
-      "module": "CommonJS"
+      "outDir": "./dist",
+      "module": "ES2015"
     },
     "exclude": [
       "**/*.test.*",

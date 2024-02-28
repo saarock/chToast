@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My App</title>
+    <link rel="stylesheet" href="./assets/css/ch_style.css">
 </head>
 <body>
-    <script src="./dist/toast.js"> </script>
+
+    <div class="ch_toast_container">
+
+    </div>
+
+
+    <button>CLick</button>
+    <script src="./dist/normalToast/normalChToast.js" defer type="module"></script>
+
+ <script type="module">
+        import {normal} from './dist/normalToast/normalChToast.js';
+     function a() {
+        normal.loading();
+        normal.error();
+        setTimeout(() => {
+            normal.normalToastRemove( 2, "loggin")
+        },2000)
+
+        }
+        
+        document.querySelector('button').addEventListener('click', a)
+ </script>
     
 
-    
     
 </body>
 </html>

@@ -6,6 +6,6 @@ var advanceToastSetting = (function () {
     };
     return advanceToastSetting;
 }());
-export { advanceToastSetting };
+export default advanceToastSetting;
 export var advance = new advanceToastSetting();
 //# sourceMappingURL=advanceChToast.js.map

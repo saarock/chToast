@@ -232,6 +232,6 @@ var normalToastSetting = (function () {
     normalToastSetting.trackVariable = 5;
     return normalToastSetting;
 }());
-export { normalToastSetting };
+export default normalToastSetting;
 export var normal = new normalToastSetting();
 //# sourceMappingURL=normalChToast.js.map
