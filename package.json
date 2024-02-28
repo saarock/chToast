@@ -27,8 +27,5 @@
     "@types/node": "^20.11.20",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2"
-  },
-  "dependencies": {
-    "babel-loader": "^9.1.3"
   }
 }
