@@ -224,7 +224,7 @@ export class normalChToastSetting {
         document.getElementsByClassName("ch_toast_container");
       if (!this.ch_toast_container[0]) {
         throw new Error(
-          "ChTypeError ==> Pleased add the main container for the toast"
+          "ChTypeError ==> Please add the main container for the toast"
         );
       }
     }

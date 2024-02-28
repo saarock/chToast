@@ -1,53 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/ch_style.css" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  </head>
-  <body>
-    <button>Click</button>
-    <button class="a">Click</button>
-  <!-- Twitter icon -->
-  <i class="fab fa-twitter"></i>
-
-    <div class="ch_toast_container"></div>
-
-    <script type="module">
-      // Import 'normal' directly from normalChToast.js
-      import { normal, normalChToastSetting } from "./dist/normalToast/normalChToast.js";
-
-      normalChToastSetting.autoRemoved  = false;
-      // Define the makeClick function
-      window.makeClick = () => {
-    // typeIcon = "<i class='fab fa-twitter'></i>",
-        // let a = normal.loading({message: "Loading..."}); 
-         normal.success({message: "your "}); 
-         normal.loading();
-        //  normal.loading()
-  
-      //    setTimeout(() => {
-      // normalChToastSetting.autoRemoved  = true;
-      // normal.normalToastRemove(2)
-
-      //    },1000)
-      // };
-      };
-
-      window.makeClick2 = () => {
-        normal.removeAll()
-
-      }
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+</head>
+<body>
+    <script src="./dist/toast.js"> </script>
     
 
-      // Add event listener to the button
-      document.querySelector("button").addEventListener("click", makeClick);
-      document.querySelector(".a").addEventListener("click", makeClick2);
-    </script>
-  </body>
+    
+    
+</body>
 </html>

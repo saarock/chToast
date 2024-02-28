@@ -1,10 +1,11 @@
 
+
 /*
 
 paid version of the toast most advance toast ever and ever seen
 
 */
-class advanceChToast {
+class advanceChToast{
 
 }
 

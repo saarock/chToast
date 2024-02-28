@@ -1,0 +1,20 @@
+// {
+//     "extends": "./tsconfig",
+//     "exclude": ["**/*.test.*", "**/__mocks__/*", "**/__tests__/*"],
+//     "module": "CommonJS",
+//     "outDir": "./build"
+    
+// }
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "outDir": "./build",
+      "module": "CommonJS"
+    },
+    "exclude": [
+      "**/*.test.*",
+      "**/__mocks__/*",
+      "**/__tests__/*"
+    ]
+  }
+  

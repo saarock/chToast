@@ -4,12 +4,30 @@
   "description": "A notification libary for the typeScript and the javaScript projects.",
   "main": "index.js",
   "type": "module",
+  "testEnvironment": "node",
   "scripts": {
+    "compile": "tsc -p tsconfig.build.json",
     "start": "node src/index.ts",
     "test": "jest",
-    "build": "tsc"
+    "build": "webpack"
   },
-  "keywords": ["toast", "notification", "react", "typeScript", "javaScript"],
+  "keywords": [
+    "toast",
+    "notification",
+    "react",
+    "typeScript",
+    "javaScript"
+  ],
   "author": "CodeHons",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.20",
+    "ts-jest": "^29.1.2",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
 }
