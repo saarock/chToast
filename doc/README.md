@@ -5,6 +5,7 @@ To install the chToast plugin, use npm or yarn:
 
 ```bash
 npm i ch_plugins
+```
 
 
 ## Usage
